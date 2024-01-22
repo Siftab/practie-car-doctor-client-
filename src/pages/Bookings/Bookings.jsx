@@ -19,7 +19,7 @@ const Bookings = () => {
         axiosSecure.get(url)
         .then(res=> setBookings(res.data))
         
-    }, [url]);
+    }, [url,axiosSecure]);
 
     const handleDelete = id => {
         const proceed = confirm('Are You sure you want to delete');
